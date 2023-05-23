@@ -3,6 +3,7 @@ PATH
   specs:
     ir_telemetry (0.1.0)
       activesupport (>= 7.0)
+      bindata (~> 2.4)
       zeitwerk (~> 2.6)
 
 GEM
@@ -14,6 +15,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
     ast (2.4.2)
+    bindata (2.4.15)
     concurrent-ruby (1.2.2)
     i18n (1.13.0)
       concurrent-ruby (~> 1.0)
