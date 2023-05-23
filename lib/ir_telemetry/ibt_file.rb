@@ -10,7 +10,7 @@ module IRTelemetry
     IRSDK_MAX_STRING = 32
     IRSDK_MAX_DESC = 64
 
-    IBT_FILE_ENCONDING = "Windows-1252"
+    IBT_FILE_ENCODING = "Windows-1252"
 
     class << self
       def open(filepath, &block)
@@ -33,7 +33,7 @@ module IRTelemetry
     def session_info
       @io.seek(@header.session_info_offset)
       session_string = @io.read(@header.session_info_len)
-      session_string.force_encoding(IBT_FILE_ENCONDING)
+      session_string.force_encoding(IBT_FILE_ENCODING)
       session_string.encode("UTF-8")
 
       YAML.safe_load(session_string, permitted_classes: [Date])
