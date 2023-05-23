@@ -1,3 +1,5 @@
+[![Tests](https://github.com/virolea/ir_telemetry/actions/workflows/tests.yml/badge.svg)](https://github.com/virolea/ir_telemetry/actions/workflows/tests.yml)
+
 # IRacing Telemetry
 
 TODO: Delete this and the text below, and describe your gem
