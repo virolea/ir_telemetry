@@ -2,8 +2,9 @@
 
 require "test_helper"
 
-class TestIRTelemetry < Minitest::Test
-  def test_that_it_has_a_version_number
+class TestIRTelemetry < ActiveSupport::TestCase
+  test "version number" do
     refute_nil ::IRTelemetry::VERSION
+    assert_equal "0.1.0", ::IRTelemetry::VERSION
   end
 end
