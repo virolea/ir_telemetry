@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
-require_relative "ir_telemetry/version"
+require "zeitwerk"
 
-module IrTelemetry
+loader = Zeitwerk::Loader.for_gem
+loader.inflector.inflect "ir_telemetry" => "IRTelemetry"
+loader.setup
+
+module IRTelemetry
   class Error < StandardError; end
-  # Your code goes here...
 end
