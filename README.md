@@ -1,4 +1,4 @@
-[![Tests](https://github.com/virolea/ir_telemetry/actions/workflows/tests.yml/badge.svg)](https://github.com/virolea/ir_telemetry/actions/workflows/tests.yml)
+[![CI](https://github.com/virolea/ir_telemetry/actions/workflows/ci.yml/badge.svg)](https://github.com/virolea/ir_telemetry/actions/workflows/ci.yml)
 
 # IRacing Telemetry
 
