@@ -2,8 +2,8 @@
 
 require "test_helper"
 
-class FileParserTest < ActiveSupport::TestCase
-  setup do
+class FileParserTest < Minitest::Test
+  def setup
     @ibt_filepath = "test/fixtures/files/clio.ibt"
   end
 

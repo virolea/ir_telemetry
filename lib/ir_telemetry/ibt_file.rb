@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "yaml"
+require "date"
 
 module IRTelemetry
   class IBTFile

@@ -2,8 +2,12 @@
 
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
 
-require "active_support/test_case"
-require "active_support/testing/autorun"
 require "minitest/autorun"
 
 require "ir_telemetry"
+
+require_relative "support/test_macro"
+
+Minitest::Test.class_eval do
+  extend TestMacro
+end

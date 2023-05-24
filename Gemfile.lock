@@ -2,23 +2,14 @@ PATH
   remote: .
   specs:
     ir_telemetry (0.1.0)
-      activesupport (>= 7.0)
       bindata (~> 2.4)
       zeitwerk (~> 2.6)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.4.3)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 1.6, < 2)
-      minitest (>= 5.1)
-      tzinfo (~> 2.0)
     ast (2.4.2)
     bindata (2.4.15)
-    concurrent-ruby (1.2.2)
-    i18n (1.13.0)
-      concurrent-ruby (~> 1.0)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
     lint_roller (1.0.0)
@@ -57,13 +48,12 @@ GEM
     standard-performance (1.0.1)
       lint_roller (~> 1.0)
       rubocop-performance (~> 1.16.0)
-    tzinfo (2.0.6)
-      concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
     zeitwerk (2.6.8)
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   ir_telemetry!
