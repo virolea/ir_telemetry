@@ -2,7 +2,7 @@
 
 require "test_helper"
 
-class FileParserTest < Minitest::Test
+class IBTFileTest < Minitest::Test
   def setup
     @ibt_filepath = "test/fixtures/files/clio.ibt"
   end

@@ -5,6 +5,8 @@ require "date"
 
 module IRTelemetry
   class IBTFile
+    attr_reader :header, :io
+
     IRSDK_HEADER_SIZE = 112
     IRSDK_VAR_HEADER_SIZE = 144
 
@@ -38,6 +40,10 @@ module IRTelemetry
       session_string.encode("UTF-8")
 
       YAML.safe_load(session_string, permitted_classes: [Date])
+    end
+
+    def dataset
+      @dataset ||= Dataset.new(self)
     end
   end
 end
