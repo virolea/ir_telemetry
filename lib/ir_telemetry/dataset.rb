@@ -27,7 +27,7 @@ module IRTelemetry
       while (buffer = io.read(buffer_length))
         data_point = DataPoint.new(buffer, self)
 
-        yield data_point if block_given?
+        yield data_point if block
       end
     end
 
