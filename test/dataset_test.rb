@@ -4,7 +4,7 @@ require "test_helper"
 
 class DatasetTest < Minitest::Test
   def setup
-    file = IRTelemetry::IBTFile.new( "test/fixtures/files/clio.ibt")
+    file = IRTelemetry::IBTFile.new("test/fixtures/files/clio.ibt")
     @dataset = IRTelemetry::Dataset.new(file)
   end
 
@@ -38,7 +38,7 @@ class DatasetTest < Minitest::Test
       5.87,
       5.89,
       5.91,
-      5.92,
+      5.92
     ]
   end
 end

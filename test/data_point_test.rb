@@ -4,8 +4,8 @@ require "test_helper"
 
 class DataPointTest < Minitest::Test
   def setup
-    buffer = File.open("test/fixtures/data_point_buffer.bin", "rb").read
-    dataset = IRTelemetry::IBTFile.new( "test/fixtures/files/clio.ibt").dataset
+    buffer = File.binread("test/fixtures/data_point_buffer.bin")
+    dataset = IRTelemetry::IBTFile.new("test/fixtures/files/clio.ibt").dataset
     @data_point = IRTelemetry::DataPoint.new(buffer, dataset)
   end
 
