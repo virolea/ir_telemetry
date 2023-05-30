@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ir_telemetry (0.1.0)
+    ir_telemetry (0.2.0)
       bindata (~> 2.4)
       zeitwerk (~> 2.6)
 

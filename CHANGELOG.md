@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.2.0] - 2023-05-30
+
 - Add dataset iteration 
 - Add test workflow 
 - Add Session string parsing
