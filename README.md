@@ -1,5 +1,5 @@
 [![CI](https://github.com/virolea/ir_telemetry/actions/workflows/ci.yml/badge.svg)](https://github.com/virolea/ir_telemetry/actions/workflows/ci.yml)
-
+[![Gem Version](https://badge.fury.io/rb/ir_telemetry.svg)](https://badge.fury.io/rb/ir_telemetry)
 # iRacing Telemetry
 
 Parse and browse iRacing telemetry files with Ruby.
