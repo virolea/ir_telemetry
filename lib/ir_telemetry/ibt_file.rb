@@ -42,8 +42,8 @@ module IRTelemetry
       YAML.safe_load(session_string, permitted_classes: [Date])
     end
 
-    def dataset
-      @dataset ||= Dataset.new(self)
+    def telemetry
+      @telemetry ||= Telemetry.new(self)
     end
   end
 end
