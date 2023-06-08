@@ -5,7 +5,7 @@ require "test_helper"
 class DatasetTest < Minitest::Test
   def setup
     file = IRTelemetry::IBTFile.new("test/fixtures/files/clio.ibt")
-    @dataset = IRTelemetry::Dataset.new(file)
+    @dataset = file.telemetry.dataset
   end
 
   test "setting variables" do
