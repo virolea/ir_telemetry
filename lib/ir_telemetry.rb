@@ -2,6 +2,7 @@
 
 require "zeitwerk"
 require "bindata"
+require "forwardable"
 
 loader = Zeitwerk::Loader.for_gem
 loader.inflector.inflect "ir_telemetry" => "IRTelemetry"
